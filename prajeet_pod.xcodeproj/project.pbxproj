@@ -20,6 +20,7 @@
 		B6FFBE3C28C0A45D00CDB687 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBE3B28C0A45D00CDB687 /* ExampleTests.swift */; };
 		B6FFBE4628C0A45E00CDB687 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBE4528C0A45E00CDB687 /* ExampleUITests.swift */; };
 		B6FFBE4828C0A45E00CDB687 /* ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBE4728C0A45E00CDB687 /* ExampleUITestsLaunchTests.swift */; };
+		B6FFBE5328C0B7E200CDB687 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FFBE5228C0B7E200CDB687 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,13 @@
 			remoteGlobalIDString = B6FFBE1E28C0A45B00CDB687;
 			remoteInfo = Example;
 		};
+		B6FFBE5628C0B86700CDB687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B699CE9328C072730040E301 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B699CE9B28C072730040E301;
+			remoteInfo = prajeet_pod;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +73,7 @@
 		B6FFBE4128C0A45D00CDB687 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FFBE4528C0A45E00CDB687 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		B6FFBE4728C0A45E00CDB687 /* ExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6FFBE5228C0B7E200CDB687 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				B699CE9F28C072730040E301 /* prajeet_pod.h */,
+				B6FFBE5228C0B7E200CDB687 /* Constants.swift */,
 			);
 			path = prajeet_pod;
 			sourceTree = "<group>";
@@ -240,6 +250,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B6FFBE5728C0B86700CDB687 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -294,6 +305,7 @@
 				TargetAttributes = {
 					B699CE9B28C072730040E301 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					B699CEA328C072740040E301 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -379,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6FFBE5328C0B7E200CDB687 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +448,11 @@
 			isa = PBXTargetDependency;
 			target = B6FFBE1E28C0A45B00CDB687 /* Example */;
 			targetProxy = B6FFBE4228C0A45E00CDB687 /* PBXContainerItemProxy */;
+		};
+		B6FFBE5728C0B86700CDB687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B699CE9B28C072730040E301 /* prajeet_pod */;
+			targetProxy = B6FFBE5628C0B86700CDB687 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,6 +599,7 @@
 		B699CEAF28C072740040E301 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -601,6 +620,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -609,6 +629,7 @@
 		B699CEB028C072740040E301 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -637,6 +658,7 @@
 		B699CEB228C072740040E301 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYSBH6Y8HY;
@@ -653,6 +675,7 @@
 		B699CEB328C072740040E301 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZYSBH6Y8HY;
